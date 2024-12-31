@@ -1,35 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from './components/layout/Layout';
+import Home from './pages/Home';
+import AboutSergio from './pages/AboutSergio';
+// Aquí agregamos las demás vistas
+// import YogaClasses from './pages/YogaClasses';
+// import Meditation from './pages/Meditation';
+// import CustomClasses from './pages/CustomClasses';
+// import Blog from './pages/Blog';
+// import Contact from './pages/Contact';
+// import Philosophy from './pages/Philosophy';
+// import PracticeSpace from './pages/PracticeSpace';
+import NotFound from './pages/NotFound';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div className='border-2'>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1 className='border-2'>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<AboutSergio />} />
+          {/* <Route path="yoga-classes" element={<YogaClasses />} />
+          <Route path="meditation" element={<Meditation />} />
+          <Route path="custom-classes" element={<CustomClasses />} />
+          <Route path="blog" element={<Blog />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="philosophy" element={<Philosophy />} />
+          <Route path="practice-space" element={<PracticeSpace />} /> */}
+          <Route path="*" element={<NotFound />} />
+        </Route>
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;
