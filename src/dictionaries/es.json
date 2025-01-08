@@ -1,0 +1,41 @@
+{   
+    "pages": {
+        "home": {
+            "welcomeTitle": "Bienvenido a nuestro sitio web",
+            "sections": {
+                "aboutSergio": {
+                "title": "Acerca de Sergio",
+                "description": "Conoce más sobre Sergio y su experiencia en yoga, meditación y desarrollo personal."
+                },
+                "yogaClasses": {
+                "title": "Clases de Yoga",
+                "description": "Explora nuestras clases de yoga para todos los niveles."
+                },
+                "meditation": {
+                "title": "Clases de Meditación",
+                "description": "Únete a nuestras clases de meditación y alcanza la paz interior."
+                },
+                "customClasses": {
+                "title": "Clases Personalizadas",
+                "description": "Clases adaptadas a tus necesidades y horarios."
+                },
+                "blog": {
+                "title": "Blog",
+                "description": "Lee nuestros artículos sobre yoga, meditación y bienestar."
+                },
+                "contact": {
+                "title": "Contacto",
+                "description": "Ponte en contacto con nosotros para más información."
+                },
+                "philosophy": {
+                "title": "Filosofía Aplicada",
+                "description": "Descubre nuestra filosofía en yoga y bienestar integral."
+                },
+                "practiceSpace": {
+                "title": "Espacio de Práctica",
+                "description": "Conoce nuestro espacio donde puedes practicar yoga y meditación."
+                }
+            }
+        }
+    }
+}
