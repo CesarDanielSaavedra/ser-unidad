@@ -36,6 +36,13 @@
                 "description": "Conoce nuestro espacio donde puedes practicar yoga y meditación."
                 }
             }
+        },
+        "about": {
+            "welcomeTitle": "Acerca de Sergio",
+            "paragraphs": [
+                "Información sobre Sergio y su trayectoria como instructor de yoga.",
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae atque sit iste unde nesciunt non asperiores. Ullam magnam provident sunt dolores porro repudiandae dolore alias exercitationem nostrum, explicabo ea saepe?\nLorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam blanditiis natus reprehenderit minima amet, at molestiae temporibus eius suscipit exercitationem earum ducimus enim eum sunt voluptates explicabo neque animi sed."
+            ]
         }
     }
 }

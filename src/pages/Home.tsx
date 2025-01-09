@@ -6,11 +6,11 @@ const Home = () => {
   const { pages } = useDictionary();  
   
   return (
-    <div className="container mx-auto p-4">
+    <main className="container mx-auto p-4">
       <h1 className="text-3xl font-bold mb-6">{pages.home.welcomeTitle}</h1>
       <div className="space-y-4">
         {Object.entries(pages.home.sections).map(([key, section]) => (
-          <div key={key} className="p-4 border rounded shadow-lg">
+          <section key={key} className="p-4 border rounded shadow-lg">
             <h2 className="text-xl font-semibold">
               <Link to={`/${key}`} className="text-blue-500 hover:underline">
                 {section.title}
@@ -19,10 +19,10 @@ const Home = () => {
             <p className="text-gray-700">
               {section.description}
             </p>
-          </div>
+          </section>
         ))}
       </div>
-    </div>
+    </main>
   );
 };
 
