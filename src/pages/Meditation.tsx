@@ -1,17 +1,20 @@
-//import React from 'react';
+import { useDictionary } from '../hooks/useDictionary';  
 
 const Meditation = () => {
-    return (
-      <section>
-        <h1 className="text-2xl font-bold mb-4">Meditaciones</h1>
-        <p className="text-gray-700">
-          Información sobre meditaciones.
-        </p>
-        <p className="text-gray-700">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae atque sit iste unde nesciunt non asperiores. Ullam magnam provident sunt dolores porro repudiandae dolore alias exercitationem nostrum, explicabo ea saepe?
-        </p>
-      </section>
-    );
-  };
+  const { pages } = useDictionary();  
   
-  export default Meditation;
+    return (
+      <>
+        <h1 className="text-2xl font-bold mb-4">{pages.meditation.welcomeTitle}</h1>
+        {pages.meditation.paragraphs.map((paragraph, index) => (
+          <p key={index} className="text-gray-700">
+            {paragraph.split("\n").map((line, index) => (
+              <span key={index}>{line}<br /></span>
+            ))}
+          </p>
+        ))}
+      </>
+      );
+};  
+
+export default Meditation;

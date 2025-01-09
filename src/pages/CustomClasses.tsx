@@ -1,18 +1,20 @@
-//import React from 'react';
+import { useDictionary } from '../hooks/useDictionary';  
 
 const CustomClasses = () => {
-    return (
-      <section>
-        <h1 className="text-2xl font-bold mb-4">Clases Personalizadas</h1>
-        <p className="text-gray-700">
-          Información sobre clases personalizadas.
-        </p>
-        <p className="text-gray-700">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae atque sit iste unde nesciunt non asperiores. Ullam magnam provident sunt dolores porro repudiandae dolore alias exercitationem nostrum, explicabo ea saepe?
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam blanditiis natus reprehenderit minima amet, at molestiae temporibus eius suscipit exercitationem earum ducimus enim eum sunt voluptates explicabo neque animi sed.
-        </p>
-      </section>
-    );
-  };
+  const { pages } = useDictionary();  
   
-  export default CustomClasses;
+    return (
+      <>
+        <h1 className="text-2xl font-bold mb-4">{pages['custom-classes'].welcomeTitle}</h1>
+        {pages['custom-classes'].paragraphs.map((paragraph, index) => (
+          <p key={index} className="text-gray-700">
+            {paragraph.split("\n").map((line, index) => (
+              <span key={index}>{line}<br /></span>
+            ))}
+          </p>
+        ))}
+      </>
+      );
+};
+ 
+export default CustomClasses;

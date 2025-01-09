@@ -50,6 +50,60 @@
                 "Información sobre las clases de Yoga y sus contenidos.",
                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae atque sit iste unde nesciunt non asperiores. Ullam magnam provident sunt dolores porro repudiandae dolore alias exercitationem nostrum, explicabo ea saepe?\nLorem ipsum dolor, sit amet consectetur adipisicing elit. Quis harum minus voluptas adipisci odit recusandae, ipsum praesentium voluptatum pariatur ipsa, ea non unde nobis neque corporis maxime soluta rem qui!\nLorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi sint hic reiciendis possimus, obcaecati cum architecto voluptas alias eveniet minima enim nisi nihil dolore ipsum assumenda autem. Eaque, nemo. Beatae."
             ]
+        },
+        "meditation": {
+            "welcomeTitle": "Meditaciones",
+            "paragraphs": [
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae atque sit iste unde nesciunt non asperiores. Ullam magnam provident sunt dolores porro repudiandae dolore alias exercitationem nostrum, explicabo ea saepe?"
+            ]
+        },
+        "custom-classes": {
+            "welcomeTitle": "Clases Personalizadas",
+            "paragraphs": [
+                "Información sobre clases personalizadas.",
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae atque sit iste unde nesciunt non asperiores. Ullam magnam provident sunt dolores porro repudiandae dolore alias exercitationem nostrum, explicabo ea saepe?\nLorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam blanditiis natus reprehenderit minima amet, at molestiae temporibus eius suscipit exercitationem earum ducimus enim eum sunt voluptates explicabo neque animi sed."
+            ]
+        },
+        "blog": {
+            "welcomeTitle": "Blog",
+            "paragraphs": [
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae atque sit iste unde nesciunt non asperiores. Ullam magnam provident sunt dolores porro repudiandae dolore alias exercitationem nostrum, explicabo ea saepe?"
+            ]
+        },
+        "contact": {
+            "welcomeTitle": "Contacta al Sergio",
+            "paragraphs": [
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae atque sit iste unde nesciunt non asperiores. Ullam magnam provident sunt dolores porro repudiandae dolore alias exercitationem nostrum, explicabo ea saepe?"
+            ]
+        },
+        "philosophy": {
+            "welcomeTitle": "De la Filosofia",
+            "paragraphs": [
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae atque sit iste unde nesciunt non asperiores. Ullam magnam provident sunt dolores porro repudiandae dolore alias exercitationem nostrum, explicabo ea saepe?"
+            ]
+        },
+        "practice-space": {
+            "welcomeTitle": "Espacios de práctica",
+            "sections": [
+                {
+                    "title": "Espacio 1.",
+                    "description": [
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae atque sit iste unde nesciunt non asperiores. Ullam magnam provident sunt dolores porro repudiandae dolore alias exercitationem nostrum, explicabo ea saepe?\nLorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam blanditiis natus reprehenderit minima amet, at molestiae temporibus eius suscipit exercitationem earum ducimus enim eum sunt voluptates explicabo neque animi sed."
+                    ]
+                },
+                {
+                    "title": "Espacio 2.",
+                    "description": [
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae atque sit iste unde nesciunt non asperiores. Ullam magnam provident sunt dolores porro repudiandae dolore alias exercitationem nostrum, explicabo ea saepe?\nLorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam blanditiis natus reprehenderit minima amet, at molestiae temporibus eius suscipit exercitationem earum ducimus enim eum sunt voluptates explicabo neque animi sed."
+                    ]
+                },
+                {
+                    "title": "Espacio 3.",
+                    "description": [
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae atque sit iste unde nesciunt non asperiores. Ullam magnam provident sunt dolores porro repudiandae dolore alias exercitationem nostrum, explicabo ea saepe?\nLorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam blanditiis natus reprehenderit minima amet, at molestiae temporibus eius suscipit exercitationem earum ducimus enim eum sunt voluptates explicabo neque animi sed."
+                    ]
+                }
+            ]
         }
     }
 }

@@ -1,24 +1,24 @@
-const PracticeSpace = () => {
-    return (
-      <section>
-        <h1 className="text-2xl font-bold mb-4">Espacios de práctica</h1>
-        <h4 className="text-gray-700">
-          Espacio 1.
-        </h4>
-        <p className="text-gray-700">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae atque sit iste unde nesciunt non asperiores. Ullam magnam provident sunt dolores porro repudiandae dolore alias exercitationem nostrum, explicabo ea saepe?
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam blanditiis natus reprehenderit minima amet, at molestiae temporibus eius suscipit exercitationem earum ducimus enim eum sunt voluptates explicabo neque animi sed.
-        </p>
-        <h4 className="text-gray-700">
-          Espacio 2.
-        </h4>
-        <p className="text-gray-700">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae atque sit iste unde nesciunt non asperiores. Ullam magnam provident sunt dolores porro repudiandae dolore alias exercitationem nostrum, explicabo ea saepe?
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam blanditiis natus reprehenderit minima amet, at molestiae temporibus eius suscipit exercitationem earum ducimus enim eum sunt voluptates explicabo neque animi sed.
-        </p>
+import { useDictionary } from '../hooks/useDictionary';  
 
-      </section>
-    );
-  };
-  
-  export default PracticeSpace;
+const PracticeSpace = () => {
+  const { pages } = useDictionary();  
+
+  return (
+    <>
+      <h1 className="text-2xl font-bold mb-4">{pages['practice-space'].welcomeTitle}</h1>
+      {pages['practice-space'].sections.map((section, index)=>(
+        <section  key={index}>
+          <h4 className="text-gray-700" key={`section-title-${index}`}>{section.title}</h4>
+          {section.description.map((paragraph, index)=>(
+            <p key={index}>{paragraph.split('\n').map((line, index)=>(
+              <span key={index}>{line}<br /></span> 
+              ))}
+            </p>
+          ))}
+        </section>
+      ))}
+    </>
+  );
+};
+
+export default PracticeSpace;

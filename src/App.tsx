@@ -7,10 +7,9 @@ import YogaClasses from './pages/YogaClasses';
 import Meditation from './pages/Meditation';
 import CustomClasses from './pages/CustomClasses';
 import PracticeSpace from './pages/PracticeSpace';
-// Aquí agregamos las demás vistas
-// import Blog from './pages/Blog';
-// import Contact from './pages/Contact';
-// import Philosophy from './pages/Philosophy';
+import Blog from './pages/Blog';
+import Contact from './pages/Contact';
+import Philosophy from './pages/Philosophy';
 import NotFound from './pages/NotFound';
 
 const App = () => {
@@ -23,9 +22,9 @@ const App = () => {
           <Route path="yoga-classes" element={<YogaClasses />} />
           <Route path="meditation" element={<Meditation />} />
           <Route path="custom-classes" element={<CustomClasses />} />
-          {/* <Route path="blog" element={<Blog />} />
+          <Route path="blog" element={<Blog />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="philosophy" element={<Philosophy />} />*/}
+          <Route path="philosophy" element={<Philosophy />} />
           <Route path="practice-space" element={<PracticeSpace />} /> 
           <Route path="*" element={<NotFound />} />
         </Route>
