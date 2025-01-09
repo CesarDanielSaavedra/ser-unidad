@@ -43,6 +43,13 @@
                 "Información sobre Sergio y su trayectoria como instructor de yoga.",
                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae atque sit iste unde nesciunt non asperiores. Ullam magnam provident sunt dolores porro repudiandae dolore alias exercitationem nostrum, explicabo ea saepe?\nLorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam blanditiis natus reprehenderit minima amet, at molestiae temporibus eius suscipit exercitationem earum ducimus enim eum sunt voluptates explicabo neque animi sed."
             ]
+        },
+        "yoga-classes": {
+            "welcomeTitle": "Clases de Yoga",
+            "paragraphs": [
+                "Información sobre las clases de Yoga y sus contenidos.",
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae atque sit iste unde nesciunt non asperiores. Ullam magnam provident sunt dolores porro repudiandae dolore alias exercitationem nostrum, explicabo ea saepe?\nLorem ipsum dolor, sit amet consectetur adipisicing elit. Quis harum minus voluptas adipisci odit recusandae, ipsum praesentium voluptatum pariatur ipsa, ea non unde nobis neque corporis maxime soluta rem qui!\nLorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi sint hic reiciendis possimus, obcaecati cum architecto voluptas alias eveniet minima enim nisi nihil dolore ipsum assumenda autem. Eaque, nemo. Beatae."
+            ]
         }
     }
 }
