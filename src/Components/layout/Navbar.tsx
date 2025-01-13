@@ -1,7 +1,14 @@
 //import React from 'react';
 import { Link } from 'react-router-dom';
 
+import { useDictionary } from '../../hooks/useDictionary';  
+
+import ToggleButton from '../common/ToogleButton';
+
+
 const Navbar = () => {
+  const { components } = useDictionary();  
+
   return (
     <nav className="bg-blue-500 p-4 text-white">
       <ul className="flex space-x-4">
@@ -15,6 +22,10 @@ const Navbar = () => {
         <li><Link to="/philosophy">Filosofía</Link></li>
         <li><Link to="/practice-space">Práctica</Link></li>
       </ul>
+      <ToggleButton 
+        initValue={components.ToogleButton.lenguageButton.initValue} 
+        alterValue={components.ToogleButton.lenguageButton.alterValue}
+      />
     </nav>
   );
 };

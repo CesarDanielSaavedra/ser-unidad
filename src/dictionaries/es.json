@@ -1,4 +1,12 @@
 {
+    "components": {
+        "ToogleButton": {
+            "lenguageButton": {
+                "initValue": "es",
+                "alterValue": "en"
+            }
+        }
+    },
     "pages": {
         "home": {
             "welcomeTitle": "Bienvenido a nuestro sitio web",
