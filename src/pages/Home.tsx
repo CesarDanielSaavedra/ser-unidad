@@ -3,10 +3,11 @@ import { useDictionary } from '../hooks/useDictionary';
 
 
 const Home = () => {
+
   const { pages } = useDictionary();  
   
   return (
-    <main className="container mx-auto p-4">
+    <div className="container mx-auto p-4">
       <h1 className="text-3xl font-bold mb-6">{pages.home.welcomeTitle}</h1>
       <div className="space-y-4">
         {Object.entries(pages.home.sections).map(([key, section]) => (
@@ -22,7 +23,7 @@ const Home = () => {
           </section>
         ))}
       </div>
-    </main>
+    </div>
   );
 };
 

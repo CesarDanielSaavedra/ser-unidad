@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-blue-500 p-4 text-white">
-      <ul className="flex space-x-4">
+      <ul className="flex align-center space-x-4">
         <li><Link to="/">Inicio</Link></li>
         <li><Link to="/about">Acerca de Sergio</Link></li>
         <li><Link to="/yoga-classes">Yoga</Link></li>
