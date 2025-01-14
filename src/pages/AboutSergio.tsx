@@ -1,7 +1,9 @@
 import { useDictionary } from '../hooks/useDictionary';  
+import { useLanguage } from '../hooks/useLanguage'; 
 
 const AboutSergio = () => {
-  const { pages } = useDictionary();  
+  const { language } = useLanguage();
+  const { pages } = useDictionary(language);  
 
   return (
     <>

@@ -1,15 +1,21 @@
-//import React from 'react';
+import { useDictionary } from '../hooks/useDictionary'; 
+import { useLanguage } from '../hooks/useLanguage'; 
 
 const NotFound = () => {
+  const { language } = useLanguage();
+  const { pages } = useDictionary(language);   
+
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold text-red-600">404</h1>
-        <p className="text-xl mt-2">Página no encontrada</p>
-        <p className="mt-4">La página que estás buscando no existe. Verifica la URL o regresa al inicio.</p>
-      </div>
-    </div>
+    <>
+      <h1 className="text-2xl font-bold mb-4">{pages['not-found'].welcomeTitle}</h1>
+      {pages['not-found'].paragraphs.map((paragraph, index) => (
+        <p key={index} className="text-gray-700">
+          {paragraph.split("\n").map((line, index) => (
+            <span key={index}>{line}<br /></span>
+          ))}
+        </p>
+      ))}
+    </>
   );
 };
-
 export default NotFound;

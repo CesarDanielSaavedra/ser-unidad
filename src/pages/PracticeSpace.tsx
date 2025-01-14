@@ -1,7 +1,9 @@
 import { useDictionary } from '../hooks/useDictionary';  
+import { useLanguage } from '../hooks/useLanguage'; 
 
 const PracticeSpace = () => {
-  const { pages } = useDictionary();  
+  const { language } = useLanguage();
+  const { pages } = useDictionary(language);   
 
   return (
     <>
@@ -20,5 +22,4 @@ const PracticeSpace = () => {
     </>
   );
 };
-
 export default PracticeSpace;
