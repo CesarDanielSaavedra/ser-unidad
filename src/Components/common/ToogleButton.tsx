@@ -21,5 +21,4 @@ interface ToggleButtonProps {
       </button>
     );
   }
-
   export default ToggleButton

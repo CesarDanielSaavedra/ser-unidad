@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../hooks/useLanguage';
 import { useDictionary } from '../hooks/useDictionary';  
 
 
 const Home = () => {
 
-  const { pages } = useDictionary();  
+  const { language } = useLanguage();
+  const { pages } = useDictionary(language);  
   
   return (
     <div className="container mx-auto p-4">

@@ -83,6 +83,12 @@
                 "Si tienes preguntas sobre nuestras clases o necesitas más información, no dudes en ponerte en contacto con nosotros. Estamos aquí para ayudarte en tu camino hacia el bienestar."
             ]
         },
+        "not-found": {
+            "welcomeTitle": "Página no encontrada",
+            "paragraphs": [
+                "La página que estás buscando no existe. Verifica la URL o regresa al inicio."
+            ]
+        },
         "philosophy": {
             "welcomeTitle": "De la Filosofía",
             "paragraphs": [

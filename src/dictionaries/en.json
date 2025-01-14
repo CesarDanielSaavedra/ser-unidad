@@ -83,6 +83,12 @@
                 "If you have questions about our classes or need more information, don't hesitate to contact us. We are here to help you on your journey to wellness."
             ]
         },
+        "not-found": {
+            "welcomeTitle": "Page Not Found",
+            "paragraphs": [
+                "The page you are looking for does not exist. Check the URL or go back to the homepage."
+            ]
+        },
         "philosophy": {
             "welcomeTitle": "Philosophy",
             "paragraphs": [
