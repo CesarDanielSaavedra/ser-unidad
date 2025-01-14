@@ -3,13 +3,15 @@ import { useState } from 'react';
 interface ToggleButtonProps {
     initValue: string;
     alterValue: string;
+    onClick?: () => void;
 }
 
- const  ToggleButton = ({ initValue, alterValue }: ToggleButtonProps) => {
+ const  ToggleButton = ({ initValue, alterValue, onClick }: ToggleButtonProps) => {
     const [buttonText, setButtonText] = useState(initValue);
   
     const toggleButtonText = () => {
       setButtonText(prevText => prevText === initValue ? alterValue : initValue);
+      if (onClick) onClick();
     };
   
     return (

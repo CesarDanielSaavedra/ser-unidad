@@ -2,8 +2,8 @@
     "components": {
         "ToogleButton": {
             "lenguageButton": {
-                "initValue": "es",
-                "alterValue": "en"
+                "initValue": "en",
+                "alterValue": "es"
             }
         }
     },

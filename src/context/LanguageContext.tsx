@@ -10,12 +10,12 @@ type LanguageContextType = {
 };
 
 export const LanguageContext = createContext<LanguageContextType | undefined>({
-  language: 'en', 
+  language: 'es', 
   setLanguage: () => {} 
 });
 
 export const LanguageProvider = ({ children }: LanguageProviderProps) => {
-  const [language, setLanguage] = useState('en'); 
+  const [language, setLanguage] = useState('es'); 
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>
