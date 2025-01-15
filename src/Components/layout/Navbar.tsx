@@ -27,6 +27,10 @@ const Navbar = () => {
     <nav className="bg-blue-500 p-4 text-white">
       <div className="flex justify-between items-center">
 
+        <Link to="/">
+          <img src="/src/assets/logo_ser_unidad.svg" alt="Logo" className="h-8" />
+        </Link>
+
         <button
           onClick={toggleMenu}
           className={`block lg:hidden p-2 bg-blue-500 text-white focus:outline-none transition-transform duration-200 ${isMenuOpen ? 'rotate-90' : ''}`}
