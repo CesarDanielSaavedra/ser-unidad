@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center">
 
         <Link to="/">
-          <img src="/src/assets/logo_ser_unidad.svg" alt="Logo" className="h-8" />
+          <img src="/logo_ser_unidad.svg" alt="Logo" className="h-8" />
         </Link>
 
         <button
