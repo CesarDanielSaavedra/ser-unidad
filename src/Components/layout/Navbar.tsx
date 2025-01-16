@@ -24,27 +24,30 @@ const Navbar = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <nav className="bg-blue-500 p-4 text-white">
-      <div className="flex justify-between items-center">
-
+    <nav className="bg-blue-500 p-4 text-white ">
+      <div className='flex intems-center justify-between'>
+        {/* LOGO */}
         <Link to="/">
           <img src="/logo_ser_unidad.svg" alt="Logo" className="h-8" />
         </Link>
 
-        <button
-          onClick={toggleMenu}
-          className={`block lg:hidden p-2 bg-blue-500 text-white focus:outline-none transition-transform duration-200 ${isMenuOpen ? 'rotate-90' : ''}`}
-        >
-          <div className="w-6 h-0.5 bg-white mb-1"></div>
-          <div className="w-6 h-0.5 bg-white mb-1"></div>
-          <div className="w-6 h-0.5 bg-white"></div>
-        </button>
-
-        <ul
-            className={`lg:flex lg:space-x-4 transition-all duration-300 ease-in-out ${
-              isMenuOpen ? 'block' : 'hidden lg:block'
-            }`}
+        {/* BURGER MENU */}
+        <div className={`flex transition-all duration-300 ${isMenuOpen ? 'justify-start' : 'justify-center'} flex-grow items-center`}>
+          <button
+            onClick={toggleMenu}
+            className={`p-2 bg-blue-500 text-white focus:outline-none transition-transform duration-300 ${isMenuOpen ? 'rotate-90' : ''}`}
           >
+            <div className="w-6 h-0.5 bg-white mb-1"></div>
+            <div className="w-6 h-0.5 bg-white mb-1"></div>
+            <div className="w-6 h-0.5 bg-white"></div>
+          </button>
+        </div>
+
+        {/* LINKS MENU */}
+        <ul
+            className={`transition-all duration-300 ease-in-out mt-4 ${
+              isMenuOpen ? 'block' : 'hidden'}`}
+            >
           <li><Link to="/">Inicio</Link></li>
           <li><Link to="/about">Acerca de Sergio</Link></li>
           <li><Link to="/yoga-classes">Yoga</Link></li>
@@ -61,7 +64,7 @@ const Navbar = () => {
           alterValue={components.ToogleButton.lenguageButton.alterValue}
           onClick={handleLanguageChange}
         />
-        
+      
       </div>
     </nav>
   );
