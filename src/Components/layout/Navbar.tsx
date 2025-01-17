@@ -5,7 +5,7 @@ import { useLanguage } from '../../hooks/useLanguage';
 import { useDictionary } from '../../hooks/useDictionary';  
 
 import ToggleButton from '../common/ToogleButton';
-
+import ToggleModal from '../common/ToogleModal';
 
 const Navbar = () => {
   const { language, setLanguage } = useLanguage();
@@ -21,21 +21,24 @@ const Navbar = () => {
     );
   };
 
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const handleToggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
     <nav className="bg-blue-500 p-4 text-white ">
-      <div className='flex intems-center justify-between'>
+      <div className='flex items-center justify-between'>
         {/* LOGO */}
         <Link to="/">
           <img src="/logo_ser_unidad.svg" alt="Logo" className="h-8" />
         </Link>
 
         {/* BURGER MENU */}
-        <div className={`flex transition-all duration-300 ${isMenuOpen ? 'justify-start' : 'justify-center'} flex-grow items-center`}>
+        <div
+          // className={`flex items-center ${isMenuOpen ? 'justify-start' : 'justify-center'} lg: hidden`}
+          className={`flex items-center justify-center ${isMenuOpen ? 'rotate-180' : ' '} transition duration-300 ease-in-out lg:hidden`}
+        >
           <button
-            onClick={toggleMenu}
-            className={`p-2 bg-blue-500 text-white focus:outline-none transition-transform duration-300 ${isMenuOpen ? 'rotate-90' : ''}`}
+            onClick={handleToggleMenu}
+            className="p-2 bg-blue-500 text-white focus:outline-none"
           >
             <div className="w-6 h-0.5 bg-white mb-1"></div>
             <div className="w-6 h-0.5 bg-white mb-1"></div>
@@ -43,12 +46,11 @@ const Navbar = () => {
           </button>
         </div>
 
+
         {/* LINKS MENU */}
         <ul
-            className={`transition-all duration-300 ease-in-out mt-4 ${
-              isMenuOpen ? 'block' : 'hidden'}`}
+            className={'hidden lg:flex lg:space-x-4 items-center justify-center'}
             >
-          <li><Link to="/">Inicio</Link></li>
           <li><Link to="/about">Acerca de Sergio</Link></li>
           <li><Link to="/yoga-classes">Yoga</Link></li>
           <li><Link to="/meditation">Meditación</Link></li>
@@ -66,6 +68,7 @@ const Navbar = () => {
         />
       
       </div>
+      <ToggleModal isOpen={isMenuOpen} onClose={handleToggleMenu}/>
     </nav>
   );
 };
