@@ -28,12 +28,11 @@ const Navbar = () => {
       <div className='flex items-center justify-between'>
         {/* LOGO */}
         <Link to="/">
-          <img src="/logo_ser_unidad.svg" alt="Logo" className="h-8" />
+          <img src={`${import.meta.env.VITE_PUBLIC_URL}assets/logo_ser_unidad.svg`} alt="Logo" className="h-8" />
         </Link>
 
         {/* BURGER MENU */}
         <div
-          // className={`flex items-center ${isMenuOpen ? 'justify-start' : 'justify-center'} lg: hidden`}
           className={`flex items-center justify-center ${isMenuOpen ? 'rotate-180' : ' '} transition duration-300 ease-in-out lg:hidden`}
         >
           <button
