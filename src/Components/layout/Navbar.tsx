@@ -61,8 +61,10 @@ const Navbar = () => {
         </ul>
 
         <ToggleButton 
-          initValue={components.ToogleButton.lenguageButton.initValue} 
-          alterValue={components.ToogleButton.lenguageButton.alterValue}
+          initValue={`${import.meta.env.BASE_URL}assets/logo_ser_unidad.svg`} 
+          initClassName="h-8" 
+          alterValue={`${import.meta.env.BASE_URL}assets/logo_isotipo.svg`}
+          alterClassName="h-8"
           onClick={handleLanguageChange}
         />
       
