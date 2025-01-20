@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className='flex items-center justify-between'>
         {/* LOGO */}
         <Link to="/">
-          <img src={`${import.meta.env.VITE_PUBLIC_URL}assets/logo_ser_unidad.svg`} alt="Logo" className="h-8" />
+          <img src={`${import.meta.env.BASE_URL}assets/logo_ser_unidad.svg`} alt="Logo" className="h-8" />
         </Link>
 
         {/* BURGER MENU */}
