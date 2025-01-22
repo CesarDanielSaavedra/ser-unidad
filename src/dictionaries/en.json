@@ -7,6 +7,10 @@
             }
         }
     },
+    "languages": {
+        "initValue": "es",
+        "alterValue": "en"
+    },
     "pages": {
         "home": {
             "welcomeTitle": "Welcome to our website",

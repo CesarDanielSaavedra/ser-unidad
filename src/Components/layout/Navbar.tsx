@@ -7,17 +7,19 @@ import { useDictionary } from '../../hooks/useDictionary';
 import ToggleButton from '../common/ToogleButton';
 import ToggleModal from '../common/ToogleModal';
 
+import menuGif from './menu.gif';
+
 const Navbar = () => {
   const { language, setLanguage } = useLanguage();
-  const { components, icons } = useDictionary(language);  
+  const { dictionary, icons } = useDictionary(language);  
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleLanguageChange = () => {
     setLanguage(
-      language === components.ToogleButton.lenguageButton.initValue
-        ? components.ToogleButton.lenguageButton.alterValue
-        : components.ToogleButton.lenguageButton.initValue
+      language === dictionary.languages.initValue
+        ? dictionary.languages.alterValue
+        : dictionary.languages.initValue
     );
   };
 
@@ -28,20 +30,20 @@ const Navbar = () => {
       <div className='flex items-center justify-between'>
         {/* LOGO */}
         <Link to="/">
-          <img src={`${import.meta.env.BASE_URL}assets/logo_ser_unidad.svg`} alt="Logo" className="h-10" />
+          <img src={`${import.meta.env.BASE_URL}${icons.main}`} alt="Logo" className="h-8" />
         </Link>
 
         {/* BURGER MENU */}
         <div
-          className={`flex items-center justify-center ${isMenuOpen ? 'rotate-180' : ' '} transition duration-300 ease-in-out lg:hidden`}
+          className={`flex items-center justify-start w-full ml-2 ${isMenuOpen ? 'rotate-180' : ' '} transition duration-300 ease-in-out lg:hidden`}
         >
           <button
             onClick={handleToggleMenu}
             className="p-2 bg-blue-500 text-white focus:outline-none"
           >
-            <div className="w-6 h-0.5 bg-white mb-1"></div>
-            <div className="w-6 h-0.5 bg-white mb-1"></div>
-            <div className="w-6 h-0.5 bg-white"></div>
+            <div className='p-1 bg-white rounded-md'>
+              <img src={menuGif} alt="Logo" className="h-5" />
+            </div>
           </button>
         </div>
 
@@ -61,7 +63,7 @@ const Navbar = () => {
         </ul>
 
         <ToggleButton 
-          className="ml-4 px-2 py-2 text-blue-500 font-semibold rounded-lg hover:bg-blue-600 hover:text-white transition duration-200"
+          className="p-2 text-blue-500 font-semibold rounded-lg hover:bg-blue-600 hover:text-white transition duration-200"
           initValue={`${import.meta.env.BASE_URL}${icons.language.inital}`} 
           initClassName="h-8" 
           alterValue={`${import.meta.env.BASE_URL}${icons.language.alter}`}
