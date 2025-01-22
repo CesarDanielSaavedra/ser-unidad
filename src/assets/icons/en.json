@@ -1,0 +1,8 @@
+{
+    "favicon": "/assets/logo_isotipo.svg",
+    "principal": "assets/logo_ser_unidad.svg",
+    "language": {
+      "inital": "assets/icons/lang-es(FFFFFF).png",
+      "alter": "assets/icons/lang-en(FFFFFF).png"
+    }
+}

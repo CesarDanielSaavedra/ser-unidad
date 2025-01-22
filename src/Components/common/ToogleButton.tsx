@@ -3,6 +3,7 @@ import { useState } from 'react';
 interface ToggleButtonProps {
   initValue: string;  // Texto o URL de imagen
   alterValue: string;  // Texto o URL de imagen
+  className?: string;
   initClassName?: string;
   alterClassName?: string;
   initAlt?: string;
@@ -13,6 +14,7 @@ interface ToggleButtonProps {
 const ToggleButton = ({
   initValue,
   alterValue,
+  className,
   initClassName,
   alterClassName,
   initAlt,
@@ -27,13 +29,13 @@ const ToggleButton = ({
   };
 
   const isImageUrl = (value: string) => {
-    return value.endsWith('.jpg') || value.endsWith('.svg');
+    return value.endsWith('.jpg') || value.endsWith('.svg') || value.endsWith('.png') || value.endsWith('.gif');
   };
 
   return (
     <button 
       onClick={toggleButtonContent}
-      className="ml-4 px-4 py-2 bg-white text-blue-500 font-semibold rounded-lg shadow-md hover:bg-blue-600 hover:text-white transition duration-200"
+      className={className}
     >
       {isImageUrl(buttonContent) ? (
         <img 

@@ -9,7 +9,7 @@ import ToggleModal from '../common/ToogleModal';
 
 const Navbar = () => {
   const { language, setLanguage } = useLanguage();
-  const { components } = useDictionary(language);  
+  const { components, icons } = useDictionary(language);  
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className='flex items-center justify-between'>
         {/* LOGO */}
         <Link to="/">
-          <img src={`${import.meta.env.BASE_URL}assets/logo_ser_unidad.svg`} alt="Logo" className="h-8" />
+          <img src={`${import.meta.env.BASE_URL}assets/logo_ser_unidad.svg`} alt="Logo" className="h-10" />
         </Link>
 
         {/* BURGER MENU */}
@@ -61,9 +61,10 @@ const Navbar = () => {
         </ul>
 
         <ToggleButton 
-          initValue={`${import.meta.env.BASE_URL}assets/logo_ser_unidad.svg`} 
+          className="ml-4 px-2 py-2 text-blue-500 font-semibold rounded-lg hover:bg-blue-600 hover:text-white transition duration-200"
+          initValue={`${import.meta.env.BASE_URL}${icons.language.inital}`} 
           initClassName="h-8" 
-          alterValue={`${import.meta.env.BASE_URL}assets/logo_isotipo.svg`}
+          alterValue={`${import.meta.env.BASE_URL}${icons.language.alter}`}
           alterClassName="h-8"
           onClick={handleLanguageChange}
         />
