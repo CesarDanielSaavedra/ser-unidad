@@ -8,11 +8,12 @@ import LinksList from '../../common/LinksList';
 import ToggleButton from '../../common/ToogleButton';
 import ToggleModal from '../../common/ToogleModal';
 
+import { createLinkList  } from '../../../utils';
+
 import { BASE_URL } from '../../../config/constants';
 import { ROUTES } from '../../../config/routes';
 
 import menuBtn from './menu.png';
-import path from 'path';
 
 const Navbar = () => {
 
@@ -31,16 +32,7 @@ const Navbar = () => {
 
   const handleToggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
-  const linksItems = [
-    { path: ROUTES.about, label: dictionary.links.about },
-    { path: ROUTES.yogaClasses, label: dictionary.links.yogaClasses },
-    { path: ROUTES.meditation, label: dictionary.links.meditation },
-    { path: ROUTES.customClasses, label: dictionary.links.customClasses },
-    { path: ROUTES.blog, label: dictionary.links.blog },
-    { path: ROUTES.contact, label: dictionary.links.contact },
-    { path: ROUTES.philosophy, label: dictionary.links.philosophy },
-    { path: ROUTES.practiceSpace, label: dictionary.links.practiceSpace },
-  ];
+  const linksItems = createLinkList(dictionary.links, ROUTES);
 
   return (
     <nav className="bg-blue-500 p-4 text-white ">
