@@ -12,21 +12,24 @@ import Contact from './pages/Contact';
 import Philosophy from './pages/Philosophy';
 import NotFound from './pages/NotFound';
 
+import { BASE_URL } from './config/constants';
+import { ROUTES } from './config/routes';
+
 const App = () => {
   return (
-    <Router basename={import.meta.env.BASE_URL}>
+    <Router basename={BASE_URL}>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<AboutSergio />} />
-          <Route path="yoga-classes" element={<YogaClasses />} />
-          <Route path="meditation" element={<Meditation />} />
-          <Route path="custom-classes" element={<CustomClasses />} />
-          <Route path="blog" element={<Blog />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="philosophy" element={<Philosophy />} />
-          <Route path="practice-space" element={<PracticeSpace />} /> 
-          <Route path="*" element={<NotFound />} />
+          <Route path={ROUTES.about} element={<AboutSergio />} />
+          <Route path={ROUTES.yogaClasses} element={<YogaClasses />} />
+          <Route path={ROUTES.meditation} element={<Meditation />} />
+          <Route path={ROUTES.customClasses} element={<CustomClasses />} />
+          <Route path={ROUTES.blog} element={<Blog />} />
+          <Route path={ROUTES.contact} element={<Contact />} />
+          <Route path={ROUTES.philosophy} element={<Philosophy />} />
+          <Route path={ROUTES.practiceSpace} element={<PracticeSpace />} /> 
+          <Route path={ROUTES.notFound} element={<NotFound />} />
         </Route>
       </Routes>
     </Router>
