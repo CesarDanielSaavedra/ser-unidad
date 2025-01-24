@@ -1,6 +1,11 @@
 import { useEffect, useState } from 'react';
 
+import { useLanguage } from '../../hooks/useLanguage';
+import { useDictionary } from '../../hooks/useDictionary';
+
 import LinksList from './LinksList';
+
+import { createLinkList } from '../../utils';
 
 import { ROUTES } from '../../config/routes';
 
@@ -12,6 +17,8 @@ interface ToggleModalProps {
 const ToggleModal = ({ isOpen, onClose }: ToggleModalProps ) => {
     
     const [isHovered, setIsHovered] = useState(false); 
+    const { language } = useLanguage();
+    const { dictionary } = useDictionary(language);  
 
     useEffect(() => {
       if (!isHovered && isOpen) {
@@ -25,16 +32,7 @@ const ToggleModal = ({ isOpen, onClose }: ToggleModalProps ) => {
 
     if (!isOpen) return null; // not rendering if Modal is close.
 
-    const linksItems = [
-      { path: ROUTES.about, label: "Acerca de Sergio" },
-      { path: ROUTES.yogaClasses, label: "Yoga" },
-      { path: ROUTES.meditation, label: "Meditación" },
-      { path: ROUTES.customClasses, label: "Personalizadas" },
-      { path: ROUTES.blog, label: "Blog" },
-      { path: ROUTES.contact, label: "Contacto" },
-      { path: ROUTES.philosophy, label: "Filosofía" },
-      { path: ROUTES.practiceSpace, label: "Práctica" },
-    ];
+    const linksItems = createLinkList(dictionary.links, ROUTES);
   
     return (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">

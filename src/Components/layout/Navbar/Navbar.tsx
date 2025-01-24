@@ -48,7 +48,7 @@ const Navbar = () => {
             onClick={handleToggleMenu}
             className="p-2 bg-blue-500 text-white focus:outline-none"
           >
-            <div className={`p-1 border-2 border-white rounded-md ${isMenuOpen ? 'rotate-180' : ' '} transition duration-[1.5s] ease-in-out`}>
+            <div className={`p-1 border-2 border-white rounded-md ${isMenuOpen ? 'rotate-180' : ' '} transition duration-[1s] ease-in-out`}>
               <img src={menuBtn} alt="Logo" className="h-5" />
             </div>
           </button>
