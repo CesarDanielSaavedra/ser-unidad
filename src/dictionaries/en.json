@@ -11,6 +11,16 @@
         "initValue": "es",
         "alterValue": "en"
     },
+    "links": {
+        "about": "About Sergio",
+        "yogaClasses": "Yoga",
+        "meditation": "Meditation",
+        "customClasses": "Personalized",
+        "blog": "Blog",
+        "contact": "Contact",
+        "philosophy": "Philosophy",
+        "practiceSpace": "Practice"
+    },
     "pages": {
         "home": {
             "welcomeTitle": "Welcome to our website",

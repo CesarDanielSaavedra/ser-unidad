@@ -12,6 +12,7 @@ import { BASE_URL } from '../../../config/constants';
 import { ROUTES } from '../../../config/routes';
 
 import menuBtn from './menu.png';
+import path from 'path';
 
 const Navbar = () => {
 
@@ -31,14 +32,14 @@ const Navbar = () => {
   const handleToggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const linksItems = [
-    { path: ROUTES.about, label: "Acerca de Sergio" },
-    { path: ROUTES.yogaClasses, label: "Yoga" },
-    { path: ROUTES.meditation, label: "Meditación" },
-    { path: ROUTES.customClasses, label: "Personalizadas" },
-    { path: ROUTES.blog, label: "Blog" },
-    { path: ROUTES.contact, label: "Contacto" },
-    { path: ROUTES.philosophy, label: "Filosofía" },
-    { path: ROUTES.practiceSpace, label: "Práctica" },
+    { path: ROUTES.about, label: dictionary.links.about },
+    { path: ROUTES.yogaClasses, label: dictionary.links.yogaClasses },
+    { path: ROUTES.meditation, label: dictionary.links.meditation },
+    { path: ROUTES.customClasses, label: dictionary.links.customClasses },
+    { path: ROUTES.blog, label: dictionary.links.blog },
+    { path: ROUTES.contact, label: dictionary.links.contact },
+    { path: ROUTES.philosophy, label: dictionary.links.philosophy },
+    { path: ROUTES.practiceSpace, label: dictionary.links.practiceSpace },
   ];
 
   return (
