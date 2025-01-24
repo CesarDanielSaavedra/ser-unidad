@@ -1,26 +1,52 @@
 import { useState } from 'react';
 
 interface ToggleButtonProps {
-    initValue: string;
-    alterValue: string;
-    onClick?: () => void;
+  initValue: string;  // Texto o URL de imagen
+  alterValue: string;  // Texto o URL de imagen
+  className?: string;
+  initClassName?: string;
+  alterClassName?: string;
+  initAlt?: string;
+  alterAlt?: string;
+  onClick?: () => void;
 }
 
- const  ToggleButton = ({ initValue, alterValue, onClick }: ToggleButtonProps) => {
-    const [buttonText, setButtonText] = useState(initValue);
-  
-    const toggleButtonText = () => {
-      setButtonText(prevText => prevText === initValue ? alterValue : initValue);
-      if (onClick) onClick();
-    };
-  
-    return (
-      <button 
-        onClick={toggleButtonText}
-        className="ml-4 px-4 py-2 bg-white text-blue-500 font-semibold rounded-lg shadow-md hover:bg-blue-600 hover:text-white transition duration-200"
-      >
-        {buttonText}
-      </button>
-    );
-  }
-  export default ToggleButton
+const ToggleButton = ({
+  initValue,
+  alterValue,
+  className,
+  initClassName,
+  alterClassName,
+  initAlt,
+  alterAlt,
+  onClick,
+}: ToggleButtonProps) => {
+  const [buttonContent, setButtonContent] = useState(initValue);
+
+  const toggleButtonContent = () => {
+    setButtonContent(prevContent => prevContent === initValue ? alterValue : initValue);
+    if (onClick) onClick();
+  };
+
+  const isImageUrl = (value: string) => {
+    return value.endsWith('.jpg') || value.endsWith('.svg') || value.endsWith('.png') || value.endsWith('.gif');
+  };
+
+  return (
+    <button 
+      onClick={toggleButtonContent}
+      className={className}
+    >
+      {isImageUrl(buttonContent) ? (
+        <img 
+          src={buttonContent} 
+          alt={buttonContent === initValue ? initAlt : alterAlt} 
+          className={buttonContent === initValue ? initClassName : alterClassName} />
+      ) : (
+        buttonContent
+      )}
+    </button>
+  );
+};
+
+export default ToggleButton;

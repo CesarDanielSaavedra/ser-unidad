@@ -7,6 +7,20 @@
             }
         }
     },
+    "languages": {
+        "initValue": "en",
+        "alterValue": "es"
+    },
+    "links": {
+        "about": "Acerca de Sergio",
+        "yogaClasses": "Yoga",
+        "meditation": "Meditación",
+        "customClasses": "Personalizadas",
+        "blog": "Blog",
+        "contact": "Contacto",
+        "philosophy": "Filosofía",
+        "practiceSpace": "Práctica"
+    },
     "pages": {
         "home": {
             "welcomeTitle": "Bienvenido a nuestro sitio web",

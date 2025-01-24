@@ -1,6 +1,13 @@
-import { Link } from 'react-router-dom';
-
 import { useEffect, useState } from 'react';
+
+import { useLanguage } from '../../hooks/useLanguage';
+import { useDictionary } from '../../hooks/useDictionary';
+
+import LinksList from './LinksList';
+
+import { createLinkList } from '../../utils';
+
+import { ROUTES } from '../../config/routes';
 
 interface ToggleModalProps {
     isOpen: boolean;
@@ -10,6 +17,8 @@ interface ToggleModalProps {
 const ToggleModal = ({ isOpen, onClose }: ToggleModalProps ) => {
     
     const [isHovered, setIsHovered] = useState(false); 
+    const { language } = useLanguage();
+    const { dictionary } = useDictionary(language);  
 
     useEffect(() => {
       if (!isHovered && isOpen) {
@@ -22,6 +31,8 @@ const ToggleModal = ({ isOpen, onClose }: ToggleModalProps ) => {
     }, [isHovered, onClose]);
 
     if (!isOpen) return null; // not rendering if Modal is close.
+
+    const linksItems = createLinkList(dictionary.links, ROUTES);
   
     return (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
@@ -37,17 +48,7 @@ const ToggleModal = ({ isOpen, onClose }: ToggleModalProps ) => {
             onMouseLeave={() => setIsHovered(false)}
             onClick={(e) => e.stopPropagation()}  // Prevents the click inside the modal from closing
           >
-            <ul className="space-y-4">
-              <li><Link to="/" onClick={onClose}>Inicio</Link></li>
-              <li><Link to="/about" onClick={onClose}>Acerca de Sergio</Link></li>
-              <li><Link to="/yoga-classes" onClick={onClose}>Yoga</Link></li>
-              <li><Link to="/meditation" onClick={onClose}>Meditación</Link></li>
-              <li><Link to="/custom-classes" onClick={onClose}>Personalizadas</Link></li>
-              <li><Link to="/blog" onClick={onClose}>Blog</Link></li>
-              <li><Link to="/contact" onClick={onClose}>Contacto</Link></li>
-              <li><Link to="/philosophy" onClick={onClose}>Filosofía</Link></li>
-              <li><Link to="/practice-space" onClick={onClose}>Práctica</Link></li>
-            </ul>
+            <LinksList items={linksItems} className='space-y-2' />
           </div>
         </div>
     );
