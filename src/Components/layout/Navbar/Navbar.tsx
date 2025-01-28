@@ -35,11 +35,11 @@ const Navbar = () => {
   const linksItems = createLinkList(dictionary.links, ROUTES);
 
   return (
-    <nav className="bg-blue-500 p-4 text-white ">
+    <nav className="bg-blue-500 pt-2 pr-4 pb-2 pl-4 text-white ">
       <div className='flex items-center justify-between'>
         {/* LOGO */}
         <Link to="/">
-          <img src={`${BASE_URL}${icons.main}`} alt="Logo" className="h-8" />
+          <img src={`${BASE_URL}${icons.main}`} alt="Logo" className="h-10" />
         </Link>
 
         {/* BURGER MENU */}
@@ -55,7 +55,7 @@ const Navbar = () => {
         </div>
 
         {/* LINKS MENU */}
-        <LinksList items={linksItems} className='hidden lg:flex lg:space-x-4 items-center justify-center' /> 
+        <LinksList items={linksItems} className='font-vietnam hidden lg:flex lg:space-x-4 items-center justify-center' /> 
 
         <ToggleButton 
           className="p-2 text-blue-500 font-semibold rounded-lg hover:bg-blue-600 hover:text-white transition duration-200"

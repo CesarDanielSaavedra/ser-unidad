@@ -7,9 +7,9 @@ const NotFound = () => {
 
   return (
     <>
-      <h1 className="text-2xl font-bold mb-4">{pages['not-found'].welcomeTitle}</h1>
+      <h1 className="font-serif text-4xl font-bold mb-4">{pages['not-found'].welcomeTitle}</h1>
       {pages['not-found'].paragraphs.map((paragraph, index) => (
-        <p key={index} className="text-gray-700">
+        <p key={index} className="font-vienam text-gray-700">
           {paragraph.split("\n").map((line, index) => (
             <span key={index}>{line}<br /></span>
           ))}
