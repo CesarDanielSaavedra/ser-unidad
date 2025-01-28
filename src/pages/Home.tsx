@@ -10,16 +10,16 @@ const Home = () => {
   
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold mb-6">{pages.home.welcomeTitle}</h1>
+      <h1 className="font-serif text-3xl font-bold mb-6">{pages.home.welcomeTitle}</h1>
       <div className="space-y-4">
         {Object.entries(pages.home.sections).map(([key, section]) => (
           <section key={key} className="p-4 border rounded shadow-lg">
-            <h2 className="text-xl font-semibold">
+            <h2 className="font-serif text-xl font-semibold">
               <Link to={`/${key}`} className="text-blue-500 hover:underline">
                 {section.title}
               </Link>
             </h2>
-            <p className="text-gray-700">
+            <p className="font-vietnam text-gray-600">
               {section.description}
             </p>
           </section>

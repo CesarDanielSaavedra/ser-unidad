@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Noto Serif';
+    src: url('./assets/fonts/NotoSerif-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: 100 900; /* Rango de pesos soportados */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Noto Serif';
+    src: url('./assets/fonts/NotoSerif-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Be Vietnam';
+    src: url('./assets/fonts/BeVietnam-Regular.ttf') format('truetype');
+    font-weight: 400; /* Peso específico de la fuente estática */
+    font-style: normal;
+  }
