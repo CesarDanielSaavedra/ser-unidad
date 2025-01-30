@@ -10,7 +10,14 @@ const Home = () => {
   
   return (
     <div className="container mx-auto p-4">
-      <h1 className="font-serif text-3xl font-bold mb-6">{pages.home.welcomeTitle}</h1>
+
+      {/* Sección del banner */}
+      <div className="w-full h-[300px] bg-cover bg-center" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}assets/images/banner.jpg)` }}>
+        <div className="w-full h-full flex items-center justify-center bg-black bg-opacity-40">
+          <h1 className="text-white text-4xl font-bold">{pages.home.welcomeTitle}</h1>
+        </div>
+      </div>
+
       <div className="space-y-4">
         {Object.entries(pages.home.sections).map(([key, section]) => (
           <section key={key} className="p-4 border rounded shadow-lg">
