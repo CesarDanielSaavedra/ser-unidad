@@ -35,7 +35,7 @@ const Navbar = () => {
   const linksItems = createLinkList(dictionary.links, ROUTES);
 
   return (
-    <nav className="bg-blue-500 pt-2 pr-4 pb-2 pl-4 text-white ">
+    <nav className="fixed top-0 left-0 w-full bg-blue-500 bg-opacity-50 pt-2 pr-4 pb-2 pl-4 text-white z-10">
       <div className='flex items-center justify-between'>
         {/* LOGO */}
         <Link to="/">
