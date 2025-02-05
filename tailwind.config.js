@@ -19,6 +19,7 @@ export default {
           blue: "#606AA1",
           gray: "#7B867E",
           brown: "#B27A64",
+          butter: "#DCE1EC",
           lightGray: "#D9E1D9",
           beige: "#E7E2CD",
           peach: "#E2C8C",
