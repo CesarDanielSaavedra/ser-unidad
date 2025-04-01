@@ -4,6 +4,8 @@ import { useDictionary } from '../hooks/useDictionary';
 
 import images from '../assets/images/images.json';
 
+import CardLayout from '../Components/common/CardLayout';
+
 const Home = () => {
 
   const { language } = useLanguage();
@@ -21,6 +23,8 @@ const Home = () => {
         </div>
       </div>
 
+      <CardLayout />
+      
       <div className="space-y-4 p-4">
         {Object.entries(pages.home.sections).map(([key, section]) => (
           <section key={key} className="p-4 bg-secondary-butter border rounded-xl shadow-lg">
