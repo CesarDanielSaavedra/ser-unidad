@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
-import { useLanguage } from '../hooks/useLanguage';
-import { useDictionary } from '../hooks/useDictionary';  
+import { useLanguage } from '../../hooks/useLanguage';
+import { useDictionary } from '../../hooks/useDictionary';  
 
-import images from '../assets/images/images.json';
+import images from '../../assets/images/images.json';
 
-import CardLayout from '../Components/common/CardLayout';
+import CardLayout from '../../Components/common/CardLayout';
+import WelcomeSection from './Sections/WelcomeSection';
 
 const Home = () => {
 
@@ -23,6 +24,7 @@ const Home = () => {
         </div>
       </div>
 
+      <WelcomeSection title="Bienvenido a Ser Unidad" subtitle="Un espacio para conectar con tu interior, encontrar equilibrio y crecer a tu propio ritmo."/>
       <CardLayout />
       
       <div className="space-y-4 p-4">
