@@ -24,7 +24,7 @@ const Home = () => {
         </div>
       </div>
 
-      <WelcomeSection title="Bienvenido a Ser Unidad" subtitle="Un espacio para conectar con tu interior, encontrar equilibrio y crecer a tu propio ritmo."/>
+      <WelcomeSection title={pages.home.welcomeSection.title} subtitle="Un espacio para conectar con tu interior, encontrar equilibrio y crecer a tu propio ritmo."/>
       <CardLayout />
       
       <div className="space-y-4 p-4">

@@ -24,6 +24,10 @@
     "pages": {
         "home": {
             "welcomeTitle": "Welcome to your space for personal growth",
+            "welcomeSection": {
+                "title": "Welcome to Ser Unidad",
+                "subtitle": "A space to connect with your inner self, find balance, and grow at your own pace."
+            },
             "sections": {
                 "about": {
                     "title": "About Sergio",

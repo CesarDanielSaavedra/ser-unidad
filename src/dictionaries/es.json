@@ -24,6 +24,10 @@
     "pages": {
         "home": {
             "welcomeTitle": "Bienvenido/a a tu espacio de crecimiento personal",
+            "welcomeSection": {
+                "title": "Bienvenido a Ser Unidad",
+                "subtitle": "Un espacio para conectar con tu interior, encontrar equilibrio y crecer a tu propio ritmo."
+            },
             "sections": {
                 "about": {
                     "title": "Acerca de Sergio",
