@@ -21,7 +21,7 @@ const Home = () => {
       <WelcomeSection title={pages.home.welcomeSection.title} subtitle="Un espacio para conectar con tu interior, encontrar equilibrio y crecer a tu propio ritmo."/>
       
       <CardLayout />
-
+      
     </div>
   );
 };

@@ -17,10 +17,11 @@ const useCustomInView = (options = {}) => {
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setInView(entry.isIntersecting)
+        setInView(entry.isIntersecting);
+        console.log(inView);
       },
       {
-        threshold: 0.95,
+        threshold: 0.90,
         ...options,
       },
     )
@@ -52,8 +53,18 @@ const WelcomeSection = ({
   const { ref, inView } = useCustomInView()
 
   useEffect(() => {
+    let timeoutId: NodeJS.Timeout
+  
     if (inView) {
       setImagesVisible(true)
+    } else {
+      timeoutId = setTimeout(() => {
+        setImagesVisible(false)
+      }, 2000)
+    }
+  
+    return () => {
+      clearTimeout(timeoutId)
     }
   }, [inView])
 
