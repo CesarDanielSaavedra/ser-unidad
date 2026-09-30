@@ -23,8 +23,8 @@ export const site = {
   phoneRaw: PHONE_RAW,
   instagramHandle: '@ser.unidad',
   instagramUrl: 'https://www.instagram.com/ser.unidad/',
-  /** Foto para la sección "Sobre Sergio". Pendiente de fotos originales; null usa un panel decorativo. */
-  aboutPhoto: null as string | null,
+  /** Foto para la sección "Sobre Sergio" (post de Instagram del 19/05/2026). Con null se muestra un panel decorativo. */
+  aboutPhoto: 'assets/images/sergio-maestras.jpg' as string | null,
   whatsapp: (message?: string) =>
     `https://wa.me/${PHONE_RAW}${message ? `?text=${encodeURIComponent(message)}` : ''}`,
 };

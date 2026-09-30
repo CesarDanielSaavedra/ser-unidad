@@ -15,7 +15,7 @@ const About = () => {
       <Container>
         <div className="grid gap-14 lg:grid-cols-12 lg:gap-16">
           <Reveal className="lg:col-span-5">
-            <figure className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-t-full bg-sand lg:max-w-none">
+            <figure className="relative mx-auto aspect-square w-full max-w-sm overflow-hidden rounded-t-full bg-sand lg:max-w-none">
               {photo ? (
                 <img src={photo} alt={about.imageAlt} className="h-full w-full object-cover" loading="lazy" />
               ) : (
