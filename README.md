@@ -1,26 +1,30 @@
-# 🌐 Ser Unidad
+# Ser Unidad
 
-Brief description of the project. *(complete this section later with the main features*
+Sitio web de [Ser Unidad](https://www.instagram.com/ser.unidad/), el espacio de Hatha Yoga, Meditación Mindfulness y filosofía aplicada de Sergio Montagner en Maldonado y Punta del Este, Uruguay.
 
-## 🚀 Installation and Setup
+Landing de una sola página, en español e inglés, construida con React, TypeScript, Vite y Tailwind CSS.
 
-### 1️⃣ Clone the repository
-Open a terminal and run the following command:
-```bash
-git clone https://github.com/CesarDanielSaavedra/ser-unidad.git
-```
+## Desarrollo
 
-### 2️⃣ Navigate to the project directory<
-```bash
-cd project-name
-```
-
-### 3️⃣ Install dependencies
 ```bash
 yarn install
-```
-
-### 5️⃣ Start the development server
-```bash
 yarn dev
 ```
+
+Otros comandos:
+
+| Comando        | Qué hace                                        |
+| -------------- | ----------------------------------------------- |
+| `yarn build`   | Chequea tipos y genera `dist/`                  |
+| `yarn preview` | Sirve `dist/` en local                          |
+| `yarn lint`    | Corre ESLint                                    |
+| `yarn deploy`  | Publica `dist/` en GitHub Pages (rama `gh-pages`) |
+
+## Dónde está cada cosa
+
+- Textos en español e inglés: `src/content/es.json` y `src/content/en.json`.
+- Horarios, espacios y contacto: `src/content/site.ts`.
+- Secciones de la página: `src/sections/`.
+- Manual de marca y relevamiento de contenido: `admin doc/`.
+
+La guía completa de arquitectura y marca está en [CLAUDE.md](./CLAUDE.md).

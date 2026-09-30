@@ -2,23 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Tipografías del manual de marca.
+   Noto Serif (variable) para títulos. Be Vietnam Pro para cuerpo de texto. */
 @font-face {
-    font-family: 'Noto Serif';
-    src: url('./assets/fonts/NotoSerif-VariableFont_wdth,wght.ttf') format('truetype');
-    font-weight: 100 900; /* Rango de pesos soportados */
-    font-style: normal;
+  font-family: "Noto Serif";
+  src: url("./assets/fonts/notoserif.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Serif";
+  src: url("./assets/fonts/notoserif-italic.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Be Vietnam Pro";
+  src: url("./assets/fonts/bevietnampro-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
   }
-  
-  @font-face {
-    font-family: 'Noto Serif';
-    src: url('./assets/fonts/NotoSerif-Italic-VariableFont_wdth,wght.ttf') format('truetype');
-    font-weight: 100 900;
-    font-style: italic;
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
   }
-  
-  @font-face {
-    font-family: 'Be Vietnam';
-    src: url('./assets/fonts/BeVietnam-Regular.ttf') format('truetype');
-    font-weight: 400; /* Peso específico de la fuente estática */
-    font-style: normal;
+
+  body {
+    @apply bg-cream font-sans text-forest antialiased;
+    text-rendering: optimizeLegibility;
   }
+
+  ::selection {
+    @apply bg-gold/30 text-forest-deep;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-serif font-medium tracking-tight;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+@layer components {
+  .label {
+    @apply font-sans text-[0.7rem] uppercase tracking-label text-gold;
+  }
+
+  .hairline {
+    @apply border-t border-forest/15;
+  }
+}

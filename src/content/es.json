@@ -1,0 +1,177 @@
+{
+  "nav": {
+    "concept": "Concepto",
+    "services": "Propuesta",
+    "about": "Sobre Sergio",
+    "schedule": "Horarios",
+    "spaces": "Espacios",
+    "contact": "Contacto",
+    "cta": "Escribime",
+    "menu": "Abrir menú",
+    "close": "Cerrar menú",
+    "switchLanguage": "Switch to English",
+    "languageShort": "EN"
+  },
+  "hero": {
+    "eyebrow": "Hatha Yoga · Meditación · Filosofía aplicada",
+    "title": "Respirá, pausá y conectate con vos mismo/a.",
+    "text": "Clases de yoga y meditación en Maldonado y Punta del Este, adaptadas a todos los cuerpos y condiciones. No necesitás experiencia previa, solo ganas de probar otra forma de estar con vos.",
+    "primary": "Escribime por WhatsApp",
+    "secondary": "Ver horarios",
+    "location": "Maldonado y Punta del Este, Uruguay",
+    "imageAlt": "Orilla del mar en Punta del Este, arena y agua en calma",
+    "whatsappMessage": "Hola Sergio, vi tu sitio y me gustaría saber más sobre las clases."
+  },
+  "concept": {
+    "eyebrow": "Ser unidad",
+    "title": "Lo físico, lo mental y lo espiritual en un mismo camino.",
+    "text": "Ser unidad es una práctica que integra el cuerpo, la respiración y la mente. Sin exigencias ni metas, solo con la intención de estar más presentes y conocerse un poco más por dentro.",
+    "items": [
+      {
+        "key": "asana",
+        "title": "Asana",
+        "subtitle": "Meditación",
+        "text": "La postura como puerta a la quietud. El cuerpo se acomoda, la respiración se aquieta y la mente encuentra dónde apoyarse."
+      },
+      {
+        "key": "infinity",
+        "title": "Infinito",
+        "subtitle": "Iteración y mejora",
+        "text": "Todo es práctica. Volver, una y otra vez, sin buscar la perfección. La constancia hace el camino."
+      },
+      {
+        "key": "elevation",
+        "title": "Elevación",
+        "subtitle": "Crecimiento",
+        "text": "Autoconocimiento y desarrollo continuo. Una relación más amable con el cuerpo y la mente, que se expande hacia el resto de la vida."
+      }
+    ],
+    "valuesLabel": "Valores",
+    "values": [
+      "Holismo",
+      "Bienestar integral",
+      "Conciencia plena",
+      "Autenticidad",
+      "Conexión",
+      "Crecimiento personal",
+      "Empoderamiento",
+      "Equilibrio"
+    ]
+  },
+  "services": {
+    "eyebrow": "Propuesta",
+    "title": "Una práctica para cada momento.",
+    "text": "Clases regulares, talleres, encuentros en la naturaleza y acompañamiento personalizado. Todas las propuestas son aptas para principiantes.",
+    "cta": "Consultar",
+    "whatsappPrefix": "Hola Sergio, me interesa: ",
+    "items": [
+      {
+        "key": "yoga",
+        "title": "Hatha Yoga y Yoga integral",
+        "meta": "Clases regulares · Todos los niveles",
+        "text": "Cuidá tu cuerpo, tu mente y tu energía. Clases adaptadas a todos los cuerpos y condiciones, para avanzar hacia tus objetivos a tu propio ritmo."
+      },
+      {
+        "key": "meditation",
+        "title": "Meditación y Mindfulness",
+        "meta": "Talleres de 8 semanas · Presencial u online",
+        "text": "Aprendé a meditar desde el comienzo o reforzá tu práctica. Guía en vivo, meditaciones grabadas, dinámicas y un grupo para compartir la experiencia."
+      },
+      {
+        "key": "philosophy",
+        "title": "Filosofía aplicada",
+        "meta": "Charlas y cursos",
+        "text": "Filosofía del yoga, Yoga Sutras, Samkhya, Ayurveda, budismo y mantras. Herramientas antiguas llevadas a la vida cotidiana."
+      },
+      {
+        "key": "private",
+        "title": "Clases personalizadas",
+        "meta": "Lunes a jueves · Consultar disponibilidad",
+        "text": "Una práctica pensada para vos, según tus objetivos y capacidades. Ideal para empezar, para recuperarse o para profundizar."
+      },
+      {
+        "key": "forest",
+        "title": "Meditación en el bosque",
+        "meta": "Sábados 16:00 · Con inscripción previa",
+        "text": "Una invitación a detener el ritmo cotidiano, vincularse con el entorno natural, el silencio y la mirada hacia adentro. Contribución voluntaria."
+      },
+      {
+        "key": "retreats",
+        "title": "Retiros y talleres",
+        "meta": "Fechas puntuales",
+        "text": "Retiros en la naturaleza, talleres de respiración y meditación, kirtan y encuentros de la comunidad. Un espacio para salir del ritmo de siempre."
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "Sobre Sergio",
+    "title": "Hola, soy Sergio Montagner.",
+    "paragraphs": [
+      "Enseño Hatha Yoga, Yoga integral, Meditación Mindfulness y filosofía aplicada en Maldonado y Punta del Este. Mi recorrido pasa por escuelas de Uruguay, Argentina e India, y por una práctica personal que sigue creciendo cada día.",
+      "Creo en una práctica sin exigencias ni metas: un espacio para escucharse un poco más, exigirse lo justo y animarse a conocerse por dentro. Las clases perfectas están bien, pero las que más enseñan suelen ser las otras."
+    ],
+    "signature": "Con cariño, Sergio",
+    "trainingLabel": "Formación y recorrido",
+    "training": [
+      { "title": "Instructorado de Yoga Integral", "place": "Escuela Dharma, Montevideo" },
+      { "title": "Hatha Yoga con Surinder Singh", "place": "Swasti Yoga Shala, Rishikesh, India" },
+      { "title": "Formación en Mindfulness", "place": "Fundación Columbia, Buenos Aires" },
+      { "title": "Retiro Vipassana de 10 días", "place": "Dhamma Bodhi, Bodhgaya, India" },
+      { "title": "Retiros e iniciaciones", "place": "Chagdud Gonpa Sengue Dzong, Minas" },
+      { "title": "Cursos de budismo", "place": "Instituto Dharmadatta" },
+      { "title": "Yoga Sutras de Patanjali", "place": "Turiya Academy · en curso" }
+    ],
+    "imageAlt": "Sergio Montagner"
+  },
+  "schedule": {
+    "eyebrow": "Horarios",
+    "title": "La semana de práctica.",
+    "text": "Clases en distintas zonas de Maldonado y Punta del Este. Escribime para confirmar lugar y disponibilidad.",
+    "days": {
+      "mon": "Lunes",
+      "tue": "Martes",
+      "wed": "Miércoles",
+      "thu": "Jueves",
+      "fri": "Viernes",
+      "sat": "Sábado"
+    },
+    "activities": {
+      "yoga": "Yoga",
+      "meditation": "Meditación",
+      "gentle": "Yoga suave",
+      "residential": "Residencial",
+      "forest": "Meditación en el bosque"
+    },
+    "privateLabel": "Clases personalizadas",
+    "privateText": "Lunes a jueves, {time}. Consultar disponibilidad.",
+    "disclaimer": "Los horarios pueden cambiar según la temporada y los talleres en curso.",
+    "cta": "Confirmar por WhatsApp",
+    "whatsappMessage": "Hola Sergio, quiero confirmar horarios y lugar de las clases."
+  },
+  "spaces": {
+    "eyebrow": "Espacios",
+    "title": "Dónde practicamos.",
+    "text": "Gracias a los espacios que nos reciben. Las clases se dan en salas y estudios amigos de la zona, y en el bosque cuando el clima acompaña.",
+    "zonesLabel": "Zonas"
+  },
+  "quote": {
+    "text": "No se trata de hacerlo perfecto. Se trata de volver. De estar. De respirar.",
+    "author": "Sergio Montagner"
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Empezás cuando quieras. Yo te acompaño.",
+    "text": "Escribime por WhatsApp para consultar horarios, reservar tu lugar en un taller o coordinar una clase personalizada. Respondo personalmente.",
+    "whatsapp": "Escribime por WhatsApp",
+    "instagram": "Seguime en Instagram",
+    "phoneLabel": "Teléfono",
+    "areaLabel": "Zona",
+    "area": "Maldonado y Punta del Este, Uruguay",
+    "whatsappMessage": "Hola Sergio, vi tu sitio y me gustaría saber más sobre las clases."
+  },
+  "footer": {
+    "tagline": "Yoga, meditación y filosofía aplicada en Maldonado y Punta del Este.",
+    "rights": "Todos los derechos reservados.",
+    "closing": "Que sea de beneficio para todos los seres."
+  }
+}
